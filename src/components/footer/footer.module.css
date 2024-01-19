@@ -1,0 +1,126 @@
+.footer {
+  width: 100%;
+  background-color: #2d2d2d;
+  color: white;
+  padding: 22px 0;
+}
+
+.footerWrapper {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  text-align: center;
+}
+
+.brandTitle {
+  font-size: 25px;
+}
+
+.service {
+  padding: 5px 0 10px 0;
+}
+
+.callCenter {
+  font-size: 28px;
+}
+
+.email {
+  margin-left: 30px;
+}
+
+.emailIcon {
+  margin-right: 3px;
+}
+
+.socialMedia {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin: 10px 0;
+}
+
+.aboutBrand {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  margin: 10px 0px;
+}
+
+.copyright {
+  font-size: 15px;
+  line-height: 22px;
+  max-width: 80%;
+  margin: 20px auto 0px;
+  color: #919191;
+  text-align: center;
+  display: inline-block;
+}
+
+@media screen and (min-width: 1024px) {
+  .footer {
+    padding: 12px 0;
+  }
+
+  .footerWrapper {
+    max-width: 960px;
+    width: 100%;
+    margin: 0 auto;
+    align-items: flex-start;
+  }
+
+  .brandTitle {
+    font-size: 20px;
+  }
+
+  .callCenter {
+    font-size: 18px;
+  }
+
+  .email {
+    font-size: 15px;
+  }
+
+  .socialMedia {
+    display: inline-flex;
+    margin-left: 30px;
+  }
+
+  .aboutBrandContainer {
+    display: flex;
+    align-items: center;
+  }
+
+  .aboutBrand {
+    flex-direction: row;
+  }
+
+  .aboutBrand span {
+    border-right: 1px solid #8a8a8a;
+    padding-right: 12px;
+    color: #919191;
+    font-size: 12px;
+  }
+
+  .service {
+    padding: 0;
+  }
+  .copyright {
+    color: #919191;
+    font-size: 12px;
+    padding-left: 12px;
+    margin: 0;
+  }
+
+  .email,
+  .phone {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .emailIcon,
+  .phoneIcon {
+    width: 16px;
+    height: 16px;
+  }
+}
