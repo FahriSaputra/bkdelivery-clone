@@ -1,0 +1,87 @@
+.container {
+  background-color: #2d2d2d;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 50px;
+  box-shadow: 0px 0px 10px 1px rgba(0, 0, 0, 0.5);
+}
+
+.humburger {
+  padding: 12px 15px;
+}
+
+.cart {
+  background-color: #ed7801;
+  padding: 11px;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+.overlay {
+  opacity: 0;
+  visibility: visible;
+  height: 0;
+  visibility: hidden;
+  z-index: 1000;
+  background: #2d2d2d;
+  transition: 0.35s;
+  position: absolute;
+  width: 100%;
+}
+
+.overlayOpen {
+  height: calc(100vh - 50px);
+  opacity: 1;
+  visibility: visible;
+}
+
+.nav {
+  position: relative;
+  height: 100%;
+  text-align: left;
+  overflow-y: scroll;
+}
+
+.menuWrapper {
+  list-style: none;
+  padding: 50px 20px 0 20px;
+}
+
+.menuItem {
+  padding: 8px 0px 20px;
+  min-height: 20px;
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+  font-size: 32px;
+  line-height: 36px;
+}
+
+.menuSubTitle {
+  color: #faaf18;
+  font-size: 15px;
+  line-height: 22px;
+}
+
+.divider {
+  border: none;
+  padding-top: 25px;
+  margin-bottom: 25px;
+  border-bottom: 1px solid #b7b7b7;
+}
+
+.menuProfile {
+  font-size: 25px;
+  line-height: 36px;
+  padding: 8px 0px 20px;
+  min-height: 20px;
+  display: block;
+  position: relative;
+  color: white;
+  text-decoration: none;
+  overflow: hidden;
+}
