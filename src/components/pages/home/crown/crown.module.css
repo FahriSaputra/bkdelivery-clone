@@ -1,0 +1,27 @@
+.crown {
+  display: flex;
+  justify-content: space-between;
+  padding: 14px 18px;
+  box-shadow: 2px 2px 13px -8px #6b6b6b;
+  margin: 20px 0 40px;
+  align-items: center;
+  border-radius: 5px;
+  gap: 8px;
+  background: white;
+
+  font-size: 16px;
+  line-height: 22px;
+  color: #2d2d2d;
+  text-transform: none;
+  font-weight: bold;
+}
+
+.crown button {
+  width: fit-content;
+}
+
+@media screen and (min-width: 1024px) {
+  .crown {
+    display: none;
+  }
+}

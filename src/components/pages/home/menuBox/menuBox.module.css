@@ -1,0 +1,49 @@
+.box {
+  background-color: #fff;
+  border-radius: 10px;
+  text-align: center;
+  box-sizing: border-box;
+  box-shadow: 2px 2px 15px -4px #6b6b6b;
+  width: 100%;
+  padding: 20px;
+}
+
+.boxImage {
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+}
+
+.boxTitle {
+  font-size: 21px;
+  color: #8b542f;
+  font-weight: normal;
+}
+
+.detailWrapper {
+  margin-top: 16px;
+}
+
+.detailWrapper button {
+  display: none;
+}
+
+@media screen and (min-width: 1024px) {
+  .menusWrapper {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .boxTitle {
+    text-align: start;
+    margin-top: 0;
+  }
+
+  .detailWrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .detailWrapper button {
+    display: block;
+  }
+}

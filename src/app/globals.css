@@ -90,6 +90,18 @@ a {
   text-decoration: none;
 }
 
+main {
+  background-color: #f9f4f2;
+  min-height: calc(100vh - 50px);
+}
+
+.mainWithBackground {
+  background-image: url(https://bkdelivery.co.id/static/website/img/BK_bg.jpg?5218847fa211);
+  background-size: cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
 @media (prefers-color-scheme: dark) {
   html {
     color-scheme: dark;

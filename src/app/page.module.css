@@ -1,0 +1,29 @@
+.main {
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  max-width: 960px;
+  width: 100%;
+}
+
+.title {
+  text-align: center;
+  font-size: 20px;
+  color: #8b542f;
+  margin: 16px 0;
+  font-weight: bold;
+}
+
+@media screen and (min-width: 1024px) {
+  .title {
+    font-size: 32px;
+    margin: 20px 0;
+  }
+
+  .crown {
+    display: none;
+  }
+}

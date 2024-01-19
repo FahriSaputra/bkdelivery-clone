@@ -7,6 +7,11 @@ const nextConfig = {
         hostname: "bkdelivery.co.id",
         port: "",
       },
+      {
+        protocol: "https",
+        hostname: "media-order.bkdelivery.co.id",
+        port: "",
+      },
     ],
   },
 };
