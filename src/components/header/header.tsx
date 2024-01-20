@@ -44,9 +44,18 @@ const Header = () => {
     setShowOverlay((prevValue) => !prevValue);
   };
 
+  const handleClickMenu = () => {
+    console.log("clicked");
+    setShowOverlay(false);
+  };
+
   return (
     <>
-      <div className={styles.container}>
+      <div
+        className={`${styles.container} ${
+          showOverlay && styles.containerSticky
+        }`}
+      >
         <div className={styles.humburger} onClick={toogleOverlay}>
           <Image
             src={
@@ -84,7 +93,11 @@ const Header = () => {
           <ul className={styles.menuWrapper}>
             {MENU_ITEM?.map(({ href, title, subTitle }) => (
               <li key={href}>
-                <Link className={styles.menuItem} href={"/"}>
+                <Link
+                  className={styles.menuItem}
+                  href={href}
+                  onClick={handleClickMenu}
+                >
                   {subTitle && (
                     <p className={styles.menuSubTitle}>{subTitle}</p>
                   )}
