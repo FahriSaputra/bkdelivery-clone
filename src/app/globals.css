@@ -92,7 +92,9 @@ a {
 
 main {
   background-color: #f9f4f2;
-  min-height: calc(100vh - 50px);
+  padding: 0px 15px;
+  display: flex;
+  justify-content: center;
 }
 
 .mainWithBackground {
@@ -100,6 +102,11 @@ main {
   background-size: cover;
   background-attachment: fixed;
   background-repeat: no-repeat;
+}
+
+.content {
+  max-width: 960px;
+  width: 100%;
 }
 
 @media (prefers-color-scheme: dark) {

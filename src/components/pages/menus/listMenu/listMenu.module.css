@@ -1,0 +1,11 @@
+.menusWrapper {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+@media screen and (min-width: 1024px) {
+  .menusWrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}

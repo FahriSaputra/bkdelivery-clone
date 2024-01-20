@@ -5,7 +5,7 @@ const Button = (
   props: PropsWithChildren<ButtonHTMLAttributes<HTMLButtonElement>>
 ) => {
   return (
-    <button {...props} className={styles.container}>
+    <button {...props} className={`${styles.container} ${props.className}`}>
       {props.children}
     </button>
   );
